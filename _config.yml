@@ -131,8 +131,8 @@ comments:
     clientSecret: 811e7dc7abf66af1d156bf3a21e91f9c2eff26d7 # GitHub Application Client Secret
     repository  : ygowill.github.io # GitHub repo
     owner       : ygowill # GitHub repo owner
-    admin: ygowill # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+      29591009 # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
@@ -147,7 +147,7 @@ comments:
 ## => Pageview
 ##############################
 pageview:
-  provider: false # false (default), "leancloud", "custom"
+  provider: leancloud # false (default), "leancloud", "custom"
 
   ## Leancloud
   leancloud:
