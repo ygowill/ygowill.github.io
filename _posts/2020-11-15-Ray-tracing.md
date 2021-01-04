@@ -1,4 +1,5 @@
 ---
+key: use-webgl-to-implement-a-ray-tracing-demo
 title: 用WebGL手写一个光线追踪demo
 tags: WebGL CG
 layout: article

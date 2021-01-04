@@ -1,4 +1,5 @@
 ---
+key: Network-transformation
 title: 实验室网络改造计划
 tags: Network Router
 layout: article

@@ -1,4 +1,5 @@
 ---
+key: Use-mosh-to-connect-server
 layout: article
 title: 和broken-pipe说bye-bye，用mosh连接服务器
 tags: SSH Server
