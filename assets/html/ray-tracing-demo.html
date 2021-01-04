@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>WebGL Path Tracing</title>
+    <style type="text/css">
+        body {
+            max-width: 900px;
+            padding: 30px;
+            margin: 0 auto;
+            font: 14px/19px 'Lucida Grande', sans-serif;
+        }
+
+        #main {
+            margin: 80px 0;
+            padding-left: 542px;
+            height: 512px;
+            position: relative;
+        }
+
+        #error {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 412px;
+            height: 412px;
+            padding: 50px;
+            text-align: center;
+            background: #DFDFDF;
+        }
+
+        canvas {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        p,
+        ul {
+            margin: 0 0 30px 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        #footer {
+            margin: 100px 0 0 0;
+            font-size: 18px;
+        }
+
+        #glossiness-factor {
+            display: none;
+            font-size: 12px;
+        }
+
+        #glossiness-factor input {
+            width: 40px;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript" src="../js/ray_tracing/sylvester.src.js"></script>
+    <script type="text/javascript" src="../js/ray_tracing/vector_func.js"></script>
+    <script type="text/javascript" src="../js/ray_tracing/variables.js"></script>
+    <script type="text/javascript" src="../js/ray_tracing/glUtils.js"></script>
+    <script type="text/javascript" src="../js/ray_tracing/webgl-path-tracing.js"></script>
+    <script type="text/javascript" src="../js/ray_tracing/Cube.js"></script>
+    <script type="text/javascript" src="../js/ray_tracing/Sphere.js"></script>
+    <script type="text/javascript" src="../js/ray_tracing/Light.js"></script>
+    <script type="text/javascript" src="../js/ray_tracing/Shader.js"></script>
+    <script type="text/javascript" src="../js/ray_tracing/PathTracer.js"></script>
+    <script type="text/javascript" src="../js/ray_tracing/Renderer.js"></script>
+    <script type="text/javascript" src="../js/ray_tracing/UI.js"></script>
+</head>
+
+<body>
+    <h1>WebGL 路径追踪</h1>
+
+    <p>该项目是基于WebGL和路径追踪的一个光线追踪小demo，参考项目见页面底部链接</p>
+
+    <ul>
+        <li>点击物体选中，可拖拽移动，点击空白处取消物体选中</li>
+        <li>按Backspace删除</li>
+        <li>拖拽鼠标移动视角</li>
+        <li>选中光源后可移动光源</li>
+    </ul>
+
+    <div id="main">
+        <canvas id="canvas" width="512" height="512"></canvas>
+        <div id="error">
+            <noscript>请启用 JavaScript.</noscript>
+        </div>
+
+        <p>
+            <button onclick="ui.selectLight()">选中光源</button>
+        </p>
+
+        <p>
+            <b>材质:</b>
+            <select id="material">
+                <option value="0" selected>漫反射</option>
+                <option value="1">镜面</option>
+                <option value="2">光泽</option>
+            </select>
+            <span id="glossiness-factor">
+                <br>光泽度因子: 0 &lt; <input id="glossiness" value="0.5"> &lt; 1
+            </span>
+            <br>
+
+            <b>环境:</b>
+            <select id="environment">
+                <option value="0" selected>Cornell Box - Red and Green</option>
+                <option value="1">Cornell Box - Yellow and Blue</option>
+                <option value="2">Cornell Box - Red and Blue</option>
+            </select>
+        </p>
+    </div>
+
+    <p id="footer">Refrences:
+        <li>
+            <a href="https://oktomus.com/posts/2020/ray-tracer-with-webgl-compute/">Writing a ray tracer for the web</a>
+        </li>
+        <li>
+            <a href="https://reindernijhoff.net/2019/03/wolfenstein-raytracing-on-using-webgl1/">Wolfenstein: Ray
+                Tracing On
+                using WebGL1</a>
+        </li>
+        <li>
+            <a href="https://github.com/evanw/webgl-path-tracing">Evan Wallace/webgl-path-tracing</a>
+        </li>
+        <li>
+            <a href="http://raytracey.blogspot.com/2019/06/lighttracer-first-webgl-path-tracer-for.html">LightTracer,
+                the first
+                WebGL path tracer for photorealistic rendering of complex scenes in the browser</a>
+        </li>
+        <li>
+            <a href="https://github.com/hoxxep/webgl-ray-tracing-demo">hoxxep/webgl-ray-tracing-demo</a>
+        </li>
+        <li>
+            <a href="https://github.com/sschoenholz/WebGL-Raytracer">sschoenholz/WebGL-Raytracer</a>
+        </li>
+</body>
+
+</html>
