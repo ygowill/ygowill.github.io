@@ -473,7 +473,7 @@ l-21 43 29 37 c17 20 49 77 73 126 46 94 112 177 161 202 30 15 94 31 136 33
           <a class="edit-on-github"
             title="Edit on Github"
             href="https://github.com/kitian616/jekyll-TeXt-theme/tree/master/docs/_docs/en/2.1-configuration.md">
-            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="Configuration"><meta itemprop="author" content="TeXt"/><meta itemprop="datePublished" content="2021-03-05T17:31:03+08:00"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="Configuration"><meta itemprop="author" content="TeXt"/><meta itemprop="datePublished" content="2021-04-07T21:29:22+08:00"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
 <div class="article__content" itemprop="articleBody"><p>Jekyll allows you to concoct your sites in any way you can dream up, and it’s thanks to the powerful and flexible configuration options that this is possible. These options can either be specified in a <em>_config.yml</em> file placed in your site’s root directory, or can be specified as flags for the jekyll executable in the terminal.</p>
@@ -564,13 +564,13 @@ l-21 43 29 37 c17 20 49 77 73 126 46 94 112 177 161 202 30 15 94 31 136 33
 
 <h3 id="url">URL</h3>
 
-<p>The base hostname and protocol for your site. if you are hosting the site on Github Pages this will be set as the GitHub Pages domain (cname or user domain)<sup id="fnref:gitHub_metadata" role="doc-noteref"><a href="#fn:gitHub_metadata" class="footnote">1</a></sup>. For example, https://kitian616.github.io or https://tianqi.name if there is cname file.</p>
+<p>The base hostname and protocol for your site. if you are hosting the site on Github Pages this will be set as the GitHub Pages domain (cname or user domain)<sup id="fnref:gitHub_metadata" role="doc-noteref"><a href="#fn:gitHub_metadata" class="footnote" rel="footnote">1</a></sup>. For example, https://kitian616.github.io or https://tianqi.name if there is cname file.</p>
 
-<p class="warning">Jekyll 3.3 overrides this value with url: http://localhost:4000 when running <code class="language-plaintext highlighter-rouge">jekyll serve</code> in a development environment<sup id="fnref:jekyll_site_variables" role="doc-noteref"><a href="#fn:jekyll_site_variables" class="footnote">2</a></sup>. You can specifying Jekyll environment<sup id="fnref:jekyll_specifying_environment" role="doc-noteref"><a href="#fn:jekyll_specifying_environment" class="footnote">3</a></sup> to production environment by <code class="language-plaintext highlighter-rouge">JEKYLL_ENV=production</code> to avoid this behavior.</p>
+<p class="warning">Jekyll 3.3 overrides this value with url: http://localhost:4000 when running <code class="language-plaintext highlighter-rouge">jekyll serve</code> in a development environment<sup id="fnref:jekyll_site_variables" role="doc-noteref"><a href="#fn:jekyll_site_variables" class="footnote" rel="footnote">2</a></sup>. You can specifying Jekyll environment<sup id="fnref:jekyll_specifying_environment" role="doc-noteref"><a href="#fn:jekyll_specifying_environment" class="footnote" rel="footnote">3</a></sup> to production environment by <code class="language-plaintext highlighter-rouge">JEKYLL_ENV=production</code> to avoid this behavior.</p>
 
 <h3 id="base-url">Base URL</h3>
 
-<p>The base URL for your site, default to ‘/’. If you are hosting the site on Github Pages this will be set as the project name for project pages if none is set<sup id="fnref:gitHub_metadata:1" role="doc-noteref"><a href="#fn:gitHub_metadata" class="footnote">1</a></sup>.</p>
+<p>The base URL for your site, default to ‘/’. If you are hosting the site on Github Pages this will be set as the project name for project pages if none is set<sup id="fnref:gitHub_metadata:1" role="doc-noteref"><a href="#fn:gitHub_metadata" class="footnote" rel="footnote">1</a></sup>.</p>
 
 <h3 id="title">Title</h3>
 
@@ -591,7 +591,7 @@ l-21 43 29 37 c17 20 49 77 73 126 46 94 112 177 161 202 30 15 94 31 136 33
 
 <h3 id="language">Language</h3>
 
-<p>The language of your site, you can override it with different ones on specific posts, pages by YAML Front Matter<sup id="fnref:font_matter" role="doc-noteref"><a href="#fn:font_matter" class="footnote">4</a></sup>, learn more at <a href="https://tianqi.name/jekyll-TeXt-theme/docs/en/i18n">Internationalization</a>.</p>
+<p>The language of your site, you can override it with different ones on specific posts, pages by YAML Front Matter<sup id="fnref:font_matter" role="doc-noteref"><a href="#fn:font_matter" class="footnote" rel="footnote">4</a></sup>, learn more at <a href="https://tianqi.name/jekyll-TeXt-theme/docs/en/i18n">Internationalization</a>.</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">lang</span><span class="pi">:</span> <span class="s">en</span>
 </code></pre></div></div>
@@ -600,7 +600,7 @@ l-21 43 29 37 c17 20 49 77 73 126 46 94 112 177 161 202 30 15 94 31 136 33
 
 <p>Set the time zone for site generation. This sets the TZ environment variable, which Ruby uses to handle time and date creation and manipulation. A list of all available values can be found <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">HERE</a>.</p>
 
-<p>When serving on a local machine, the default time zone is set by your operating system. But when served on a remote host/server, the default time zone depends on the server’s setting or location.<sup id="fnref:jekyll_global_configuration" role="doc-noteref"><a href="#fn:jekyll_global_configuration" class="footnote">5</a></sup></p>
+<p>When serving on a local machine, the default time zone is set by your operating system. But when served on a remote host/server, the default time zone depends on the server’s setting or location.<sup id="fnref:jekyll_global_configuration" role="doc-noteref"><a href="#fn:jekyll_global_configuration" class="footnote" rel="footnote">5</a></sup></p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">timezone</span><span class="pi">:</span> <span class="s">Asia/Shanghai</span>
 </code></pre></div></div>
@@ -737,7 +737,7 @@ l-21 43 29 37 c17 20 49 77 73 126 46 94 112 177 161 202 30 15 94 31 136 33
 <span class="na">chart</span><span class="pi">:</span> <span class="no">true</span>
 </code></pre></div></div>
 
-<p>And also you can override it with different ones on specific posts, pages by YAML Front Matter<sup id="fnref:font_matter:1" role="doc-noteref"><a href="#fn:font_matter" class="footnote">4</a></sup>.</p>
+<p>And also you can override it with different ones on specific posts, pages by YAML Front Matter<sup id="fnref:font_matter:1" role="doc-noteref"><a href="#fn:font_matter" class="footnote" rel="footnote">4</a></sup>.</p>
 
 <p>Check <a href="/">Writing Posts</a> for detail usage.</p>
 
@@ -757,7 +757,7 @@ l-21 43 29 37 c17 20 49 77 73 126 46 94 112 177 161 202 30 15 94 31 136 33
 
 <h2 id="sources">Sources</h2>
 
-<p>TeXt use CDN<sup id="fnref:cdn" role="doc-noteref"><a href="#fn:cdn" class="footnote">6</a></sup> for speed improvements, You can choose <a href="http://www.bootcdn.cn/">BootCDN</a> (default) or <a href="https://unpkg.com/">unpkg</a> as your site’s CDN provider, both of them are open source and free.</p>
+<p>TeXt use CDN<sup id="fnref:cdn" role="doc-noteref"><a href="#fn:cdn" class="footnote" rel="footnote">6</a></sup> for speed improvements, You can choose <a href="http://www.bootcdn.cn/">BootCDN</a> (default) or <a href="https://unpkg.com/">unpkg</a> as your site’s CDN provider, both of them are open source and free.</p>
 
 <p>If your website is mainly for Chinese, just use BootCDN.</p>
 
@@ -972,7 +972,7 @@ l-21 43 29 37 c17 20 49 77 73 126 46 94 112 177 161 202 30 15 94 31 136 33
     </li>
   </ol>
 </div>
-</div><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2021-03-05T17:31:03+08:00"><!-- start custom article footer snippet -->
+</div><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2021-04-07T21:29:22+08:00"><!-- start custom article footer snippet -->
 
 <div class="my-3">
       <div class="my-2"><a href="https://www.paypal.me/kitian616">
