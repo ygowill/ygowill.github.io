@@ -1,5 +1,5 @@
 ---
-key: Use-frp-to-connect-remote-desktop
+key: Use-git-and-make-life-easier
 layout: article
 title: 用好Git，改善项目开发体验
 tags: Git workflow
