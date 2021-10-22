@@ -173,7 +173,7 @@ void print_result(unsigned c) {
 
 ![image-20211022161808292](https://gitee.com/ygowill/pic_bed/raw/master/blog/20211022161808.png)
 
-我顿时就理解了88W行代码的来历了。。。
+我顿时就理解了88W行代码的来历了。。。如果要修改更多的数字，修改size的配置就行了，模板可以全自动的生成打印函数，而不必像原作一样手动写一堆`switch case`，这也是为什么我把这个项目作为模板的一个例子的原因。
 
 再试试功能
 
