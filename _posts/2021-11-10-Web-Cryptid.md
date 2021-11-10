@@ -23,3 +23,9 @@ article_header:
 
 整个小助手的demo在这里，目前功能仍在开发中
 [demo](/assets/vue_proj/cryptid/index.html)
+
+后续计划
+
+1. 添加小屋和石柱的手动编辑
+2. 根据线索自动遮蔽不可能区域
+3. 添加地图和线索自动生成，完全摆脱play cryptid那个网站的依赖
