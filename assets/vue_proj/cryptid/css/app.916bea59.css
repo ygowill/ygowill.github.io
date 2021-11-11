@@ -1,0 +1,20 @@
+.colorOptionsContent[data-v-50dcf9c0] .el-select-dropdown * {
+  height: 50px
+}
+
+.checklist_button[data-v-50dcf9c0] {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px
+}
