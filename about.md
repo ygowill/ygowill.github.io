@@ -33,5 +33,5 @@ key: page-about
 （同时还是一个牌佬，虽然最近只玩Master Duel就是了<br>
 梦想是过上WLB的生活
 <br><br>
-<center>联系方式看这里 $$\nonumber \downarrow\downarrow\downarrow$$ </center>
+<center>联系方式请看网页最下方图标</center>
 </details>
