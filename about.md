@@ -25,50 +25,13 @@ titles:
   # @end locale config
 key: page-about
 ---
-
-![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
-
-TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc. Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
-
-```javascript
-(() => console.log('Hello, World!'))();
-```
-
-## Features
-
-- Responsive
-- Semantic HTML
-- Skins
-- Highlight Theme
-- Internationalization
-- Search
-- Table of contents
-- Authors
-- Additional styles (alert, tag, image, icon, button, grid, etc)
-- Extensions (audios, videos, slides, demos)
-- Markdown enhancements ([MathJax](https://www.mathjax.org/), [mermaid](https://mermaidjs.github.io/), [chartjs](http://www.chartjs.org/))
-- Sharing ([AddToAny](https://www.addtoany.com/), [AddThis](https://www.addthis.com/))
-- Comments ([Disqus](https://disqus.com/), [Gitalk](https://gitalk.github.io/), [Valine](https://valine.js.org/en/))
-- Pageview ([LeanCloud](https://leancloud.cn/))
-- Analytics ([Google Analytics](https://analytics.google.com/analytics/web/))
-- RSS ([jekyll-feed](https://github.com/jekyll/jekyll-feed))
-
-## Skins
-
-TeXt has 6 built-in skins, you can also set up your own skin.
-
-| `default` | `dark` | `forest` |
-| --- |  --- | --- |
-| ![Default](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_default.jpg) | ![Dark](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_dark.jpg) | ![Forest](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_forest.jpg) |
-
-| `ocean` | `chocolate` | `orange` |
-| --- |  --- | --- |
-| ![Ocean](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_ocean.jpg) | ![Chocolate](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_chocolate.jpg) | ![Orange](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_orange.jpg) |
-
-### Highlight Theme
-
-TeXt use [Tomorrow](https://github.com/chriskempson/tomorrow-theme) as the highlight theme.
-
-| `tomorrow` | `tomorrow-night` | `tomorrow-night-eighties` | `tomorrow-night-blue` | `tomorrow-night-bright` |
-| --- |  --- | --- | --- |  --- |
-| ![Tomorrow](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow.png) | ![Tomorrow Night](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night.png) | ![Tomorrow Night Eighties](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-eighties.png) | ![Tomorrow Night Blue](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-blue.png) | ![Tomorrow Night Bright](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-bright.png) |
+<img width="100%" src="data:image/jpeg;base64,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"/>
+<details>
+<summary>猜猜我是谁？
+</summary>
+目前只是一个天天摸鱼划水，生产不出学术垃圾的UESTC研究僧<br>
+（同时还是一个牌佬，虽然最近只玩Master Duel就是了<br>
+梦想是过上WLB的生活
+<br><br>
+<center>联系方式看这里 $$\nonumber \downarrow\downarrow\downarrow$$ </center>
+</details>
