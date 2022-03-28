@@ -67,19 +67,19 @@ article_header:
 
 * 集中式工作流
 
-  ![image-20210617154139805](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617154141.png)
+  ![image-20210617154139805](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617154141.png)
 
   这是最原始也是最混乱的工作流，所有的开发都在同一条master分支上进行，一旦出现问题，如果是小问题还不要紧，可以像图中那样加一个bugfix的提交来解决，一旦是一个大问题，比如Feature2出现了问题，那么回滚到Feature1的提交，后面的Feature3，Feature4的提交就丢失了，重新合并又是一件很麻烦的事
 
 * 功能分支工作流
 
-  ![image-20210617155202005](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617155202.png)
+  ![image-20210617155202005](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617155202.png)
 
   这是基于集中式的一种工作流，基础的开发工作还是在master上完成，当有新的功能需要加入时，新开一条分支，一般以功能名命名，在这条分支上进行开发，开发完成后再通过pr合并入master。这样的好处在于可以隔离不同的功能之间的影响，在pr的时候也能提供一个code review的机会，同时也可以让分支历史更加简介。
 
 * Gitflow工作流
 
-  ![image-20210617160750462](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617160750.png)
+  ![image-20210617160750462](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617160750.png)
 
   Gitflow是一个按照开发阶段划分的严格工作流，主分支Master，开发分支Dev，功能分支Feature，版本发布分支Release，热修复分支Hotfix。
 
@@ -90,7 +90,7 @@ article_header:
 
 * 个人推荐的工作流
 
-  ![image-20210617162221960](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617162222.png)
+  ![image-20210617162221960](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617162222.png)
 
   上图所示的工作流也就是俗称的双主干工作流。
 
@@ -143,11 +143,11 @@ git checkout -b Dev
 
 如果你的命令行配置过的话应该直接就可以看到现在正位于Dev分支
 
-![image-20210617164659420](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617164659.png)
+![image-20210617164659420](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617164659.png)
 
 如果没有配置也可以通过`git branch -vv`来查看当前的分支以及所有分支的情况
 
-![image-20210617164800165](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617164800.png)
+![image-20210617164800165](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617164800.png)
 
 这个时候，可以看到我们当前位于Dev分支上，但这是一个本地分支，而下面的master分支已经和远程仓库建立起连接了。
 
@@ -161,11 +161,11 @@ git checkout -b Dev
 
 比如我们把原来的`README.md`改成`readme_test.md`并给他加一些内容，使用`git status`就可以查看当前的变化。
 
-![image-20210617170120962](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617170121.png)
+![image-20210617170120962](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617170121.png)
 
 然后将他推送到远程
 
-![image-20210617170519484](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617170519.png)
+![image-20210617170519484](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617170519.png)
 
 如果每次都要在`git push`之后写`origin Dev:Dev`就比较麻烦，因此我们可以为当前分支设置上传的目的地来简化我们的操作，就和原来的master分支一样
 
@@ -175,43 +175,43 @@ git branch --set-upstream-to=origin/Dev
 
 这个时候，Dev分支就和远程的Dev分支建立起连接，后面就可以直接push了。我们可以看一下当前的效果
 
-![image-20210617171042280](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617171042.png)
+![image-20210617171042280](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617171042.png)
 
 ### Feature分支合并回Dev
 
 当我们遇到一些较大的改动或者有新的feature需要进行模块化的开发时，我们需要为其创建一个新分支，在新分支上进行开发，在开发完成后发起merge request，然后合并回Dev分支。具体流程可以看下面。
 
-![image-20210617172152195](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617172152.png)
+![image-20210617172152195](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617172152.png)
 
-![image-20210617172524974](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617172525.png)
+![image-20210617172524974](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617172525.png)
 
 以上就完成了在feature1分支上的两次提交，由于在第一次提交后我们添加了upstream的目的地，因此第二次我们可以直接`git push`来进行提交。第二张图中的`gst`,`gaa`,`gca`均为自定义的alias，具体就是`status`，`commit all`之类的缩写。
 
-![image-20210617173106586](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617173106.png)
+![image-20210617173106586](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617173106.png)
 
 这个时候我们去查看gitlab，可以看到上面提示我们可以进行分支的合并
 
-![image-20210617173213027](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617173213.png)
+![image-20210617173213027](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617173213.png)
 
 当我们点进去可以看到默认是向master提交mr，但是按照我们的工作流，feature分支应当合并回Dev分支，因此我们需要修改分支
 
-![image-20210617173426240](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617173426.png)
+![image-20210617173426240](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617173426.png)
 
 点击Compare branches and continue可以回到刚才的界面
 
-![image-20210617173659976](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617173700.png)![image-20210617173722998](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617173723.png)
+![image-20210617173659976](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617173700.png)![image-20210617173722998](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617173723.png)
 
 我们可以在下面看到本次共有两个commit，以及合并后的改动情况，在我们填完上面的title以及description之后，我们就可以创建mr了（实践中请在下面的审核选项中选择至少一位除自己以外的人进行code review，这里只是一个展示，因此就不进行code review了，逃
 
-![image-20210617174200231](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617174200.png)
+![image-20210617174200231](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617174200.png)
 
 然后我们可以看到这样的界面，在这里所有项目的成员都可以进行评论和code review，通过后，可以点击批准和合并来进行分支的合并。可以注意到合并处有一个删除源分支，在这里为了演示就取消勾选了，实践中请自行决定。
 
-![image-20210617174454536](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617174454.png)
+![image-20210617174454536](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617174454.png)
 
 到这一步，分支的合并就完成了。
 
-![image-20210617174617410](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617174617.png)
+![image-20210617174617410](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617174617.png)
 
 从项目概览的分支图中可以以图形化的方式看到这样的改动合并情况。
 
@@ -219,7 +219,7 @@ git branch --set-upstream-to=origin/Dev
 
 当我们在经过了一段时间的开发之后，决定发布一个完整的版本。那么这时候就该从Dev分支合并回master来完成版本发布了。具体的做法和上一小节是一样的，下面就不赘述了，放一张最终的分支图作为例子，图中绿色的线表示现在位于Dev分支，右边的commit是按照时间顺序排列的，和左边的节点一一对应。
 
-![image-20210617194416259](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210617194416.png)
+![image-20210617194416259](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210617194416.png)
 
 当master分支有改动的时候，最好可以在上面打一个tag，来说明版本号，也可以加入一个版本改动说明文件，便于在项目复杂的时候可以用于搜索。
 

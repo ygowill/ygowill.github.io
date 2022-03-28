@@ -27,7 +27,7 @@ article_header:
 
 ，内容大概是这样的
 
-![425361634696417_.pic](https://gitee.com/ygowill/pic_bed/raw/master/blog/20211022141309.JPG)
+![425361634696417_.pic](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20211022141309.JPG)
 
 由于内容实在是过于好笑，以至于在接下来的两个小时内我时不时就在脑海里回味一下。最终决定用模板实现一个功能上完全等价的代码出来，正好由于项目的关系好久没写博文了，正好顺便传授一点C++的模hei板mofa入门（逃
 
@@ -108,7 +108,7 @@ void print_all(int index, unsigned const& head) {
 }
 
 template<class... Ts>
-void print_all(int index, unsigned const& head, Ts const&... args) {    
+void print_all(int index, unsigned const& head, Ts const&... args) { 
   print_all(index - 1, args...);
   std::cout << index_name[index-1] << "位数是：" << std::to_string(head) << std::endl;
 }
@@ -125,7 +125,7 @@ void print_all(int index, unsigned const& head, Ts const&... args) { 
 template<unsigned... digits>
 struct explode<0, digits...>{
   static void get_output() {
-    std::cout << "是" << std::to_string(sizeof...(digits)) << "位数" << std::endl;    
+    std::cout << "是" << std::to_string(sizeof...(digits)) << "位数" << std::endl; 
     print_all<unsigned>(sizeof...(digits), digits...);
     std::cout << "倒过来是: ";
     print_reverse(digits...);
@@ -163,21 +163,21 @@ void print_result(unsigned c) {
 
 从上面的代码中可以看出，我们的99999个打印函数在一开始就会被初始化，和原作里那个巨大的`switch case`是一样的，这也引出了模板的一个弊端，尽管模板可以帮我们在编译期解决很多问题，但是也会带来代码体积的快速膨胀之类的问题，我们可以看一下最终的代码
 
-![430251634796600_.pic_hd](https://gitee.com/ygowill/pic_bed/raw/master/blog/20211022161543.JPG)
+![430251634796600_.pic_hd](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20211022161543.JPG)
 
 代码共计67行，让我们编译一下。。。
 
-![image-20211022161730862](https://gitee.com/ygowill/pic_bed/raw/master/blog/20211022161731.png)
+![image-20211022161730862](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20211022161731.png)
 
 再看一眼体积，67行代码编出了88M的可执行文件。。。
 
-![image-20211022161808292](https://gitee.com/ygowill/pic_bed/raw/master/blog/20211022161808.png)
+![image-20211022161808292](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20211022161808.png)
 
 我顿时就理解了88W行代码的来历了。。。如果要修改更多的数字，修改size的配置就行了，模板可以全自动的生成打印函数，而不必像原作一样手动写一堆`switch case`，这也是为什么我把这个项目作为模板的一个例子的原因。
 
 再试试功能
 
-![image-20211022162104845](https://gitee.com/ygowill/pic_bed/raw/master/blog/20211022162104.png)
+![image-20211022162104845](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20211022162104.png)
 
 至少功能是正常的，那这模仿大赛，我可以说不仅还原了原作，甚至超越了原作（毕竟原作编译不出来，逃
 

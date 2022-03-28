@@ -55,15 +55,15 @@ article_header:
 
 先点一下elements看一眼具体的style，然后进行一个js的抄。
 
-![image-20210305163403239](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210305163403.png)
+![image-20210305163403239](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210305163403.png)
 
 在Tampermonkey的用户脚本区随手写了一下，就可以在中间插一个类似的按钮。
 
-![image-20210305163746276](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210305163746.png)
+![image-20210305163746276](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210305163746.png)
 
 要我说，不能说完全一致，只能说一模一样😏️
 
-![image-20210305163851892](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210305163851.png)
+![image-20210305163851892](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210305163851.png)
 
 ### 硬编码时间
 
@@ -109,13 +109,13 @@ article_header:
 
 点开Greasy Fork的控制台。
 
-![image-20210305170248854](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210305170248.png)
+![image-20210305170248854](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210305170248.png)
 
 把自己刚才在Tampermonkey里测试好的脚本复制进来。
 
 设置脚本中的说明字段。其中用于匹配url的match字段一定要写对，否则进入网站的时候打不开就搞笑了。
 
-![image-20210305170611804](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210305170611.png)
+![image-20210305170611804](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210305170611.png)
 
 最后点击发布就一切就绪了。
 
@@ -129,7 +129,7 @@ article_header:
 
 把代码上传到github之后，就可以在Greasy Fork的脚本管理页面里设置源代码同步，这边使用github的raw文件网址，就可以获取到原始文件。
 
-![image-20210305171325617](https://gitee.com/ygowill/pic_bed/raw/master/blog/20210305171325.png)
+![image-20210305171325617](https://ygowill-pic-bed.oss-cn-chengdu.aliyuncs.com/blog/20210305171325.png)
 
 到此为止，插件发布就完成了。
 
