@@ -28,3 +28,5 @@ _site/
 .jekyll-cache/
 
 .history/
+
+*.icloud
