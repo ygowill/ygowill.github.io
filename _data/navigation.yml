@@ -31,11 +31,11 @@ header:
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  卡片生成器
+      zh-Hans : &ZH_HANS  游戏王打印排版工具
       zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  卡片生成器
+      zh-Hant : &ZH_HANT  遊戲王打印排版工具
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
       ko      : &KO       카드 생성기
